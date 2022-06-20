@@ -14,13 +14,4 @@ app.use(routes);
 
 app.listen(PORT,() = {});
 
-// routes
-// const { Router } = require("express");
 
-// const notes = require("./routes/notes");
-
-// const router = Router();
-
-// router.use("/routes", notes);
-
-// module.exports = router;
