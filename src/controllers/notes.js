@@ -4,13 +4,10 @@ const { v4: uuidv4 } = require("uuid");
 
 const getNotes = (req, res) => {
   // read from file (util)
-  try {
-    const notes = getData("notes");
-    // return response - as array of objs
-    return res.json(notes);
-  } catch (error) {
-    return res.status.json({ message: "Server Error" });
-  }
+
+  const notes = getData();
+  // return response - as array of objs
+  return res.json(notes);
 };
 
 const createNote = (req, res) => {
@@ -28,13 +25,16 @@ const createNote = (req, res) => {
   };
 
   // get all notes from file
-  const data = getData("notes");
+  const notes = getData();
+
+  console.log(notes);
+  console.log(note);
 
   // insert new note
-  data.notes.push(note);
+  notes.push(note);
 
   // write to file (util)
-  writeData("notes", data);
+  writeData(notes);
 
   // send response
   return res.json({
@@ -44,16 +44,20 @@ const createNote = (req, res) => {
 
 const deleteNote = (req, res) => {
   // Get id of note from req
-  const { noteId } = req.params;
+  const noteId = req.params;
+
+  console.log(noteId);
 
   // get all notes from file
-  const { notes } = getData("notes");
+  const notes = getData();
 
   // filter list to all except those with matched id
   const filteredNotes = notes.filter((note) => note.id !== noteId);
 
+  console.log(filteredNotes);
+
   // write to file (util)
-  writeData("notes", { notes: filteredNotes });
+  writeData(filteredNotes);
 
   // send response
   return res.json({
