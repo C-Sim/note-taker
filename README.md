@@ -4,12 +4,9 @@
 
 - Express
 - Node
-- Jest
-- Path
-- Open
 - fs
-- Figlet
 - Nodemon
+- Heroku
 
 ## Screenshots
 
