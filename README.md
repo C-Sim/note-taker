@@ -1,5 +1,33 @@
 # note-taker
 
+## Technologies
+
+- Express
+- Node
+- Jest
+- Path
+- Open
+- fs
+- Figlet
+- Nodemon
+
+## Screenshots
+
+<details>
+<summary>Sample - desktop</summary>
+
+![sample-dt](...)
+
+</details>
+
+<details>
+<summary>Generated HTML sample - mobile</summary>
+
+![sample-mob](...)
+
+</details>
+<br>
+
 ## User Story
 
 ```

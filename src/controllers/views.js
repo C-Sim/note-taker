@@ -1,0 +1,3 @@
+renderHomepage = () => {};
+
+renderNotePage = () => {};
