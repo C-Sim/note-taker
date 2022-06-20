@@ -14,14 +14,14 @@ const writeData = (data) => {
   fs.writeFileSync(filePath, JSON.stringify(data));
 };
 
-const logger = (req, res, next) => {
-  const method = req.method;
-  const path = req.path;
-  next();
-};
+// const logger = (req, res, next) => {
+//   const method = req.method;
+//   const path = req.path;
+//   next();
+// };
 
 module.exports = {
   getData,
   writeData,
-  logger,
+  // logger,
 };

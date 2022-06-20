@@ -1,4 +1,4 @@
-const { getData, writeData } = require("../util");
+const { getData, writeData } = require("../utils");
 
 const getNotes = (req, res) => {
   // read from file (util)
