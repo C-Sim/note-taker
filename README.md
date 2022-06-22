@@ -1,5 +1,7 @@
 # note-taker
 
+[Deployed URL](https://guarded-tor-34423.herokuapp.com/)
+
 ## Technologies
 
 - Express
@@ -7,20 +9,21 @@
 - fs
 - Nodemon
 - Heroku
+- CSS
 
 ## Screenshots
 
 <details>
-<summary>Sample - desktop</summary>
+<summary>Sample Homepage</summary>
 
-![sample-dt](...)
+![sample-hp](public/assets/screenshots/homepage.png)
 
 </details>
 
 <details>
-<summary>Generated HTML sample - mobile</summary>
+<summary>Sample Notes Page</summary>
 
-![sample-mob](...)
+![sample-np](public/assets/screenshots/notes-page.png)
 
 </details>
 <br>
