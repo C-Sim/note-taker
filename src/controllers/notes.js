@@ -44,15 +44,15 @@ const createNote = (req, res) => {
 
 const deleteNote = (req, res) => {
   // Get id of note from req
-  const noteId = req.params;
+  const { id } = req.params;
 
-  console.log(noteId);
+  console.log(id);
 
   // get all notes from file
   const notes = getData();
 
   // filter list to all except those with matched id
-  const filteredNotes = notes.filter((note) => note.id !== noteId);
+  const filteredNotes = notes.filter((note) => note.id !== id);
 
   console.log(filteredNotes);
 
