@@ -27,9 +27,6 @@ const createNote = (req, res) => {
   // get all notes from file
   const notes = getData();
 
-  console.log(notes);
-  console.log(note);
-
   // insert new note
   notes.push(note);
 
@@ -46,15 +43,11 @@ const deleteNote = (req, res) => {
   // Get id of note from req
   const { id } = req.params;
 
-  console.log(id);
-
   // get all notes from file
   const notes = getData();
 
   // filter list to all except those with matched id
   const filteredNotes = notes.filter((note) => note.id !== id);
-
-  console.log(filteredNotes);
 
   // write to file (util)
   writeData(filteredNotes);
