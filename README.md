@@ -1,5 +1,7 @@
 # note-taker
 
+An app that can be used to write and save notes using an Express.js back end, saves and retrieves note data from a JSON file.
+
 [Deployed URL](https://guarded-tor-34423.herokuapp.com/)
 
 ## Technologies

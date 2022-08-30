@@ -5,7 +5,7 @@ const api = require("./api");
 
 const router = Router();
 
-router.use("/", views);
 router.use("/api", api);
+router.use("/", views);
 
 module.exports = router;
